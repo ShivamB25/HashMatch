@@ -13,7 +13,6 @@ with open(local_file_path, "r") as f:
 
 def delete_remote_file(file_path):
     subprocess.call(["rclone", "delete", "seadex:" + file_path])
-# add --dry-run to test
 # iterate over remote files and delete matching ones
 with open(remote_file_path, "r") as f:
     with ThreadPoolExecutor(max_workers=10) as executor:
