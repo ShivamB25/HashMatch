@@ -32,3 +32,10 @@ with open(remote_file_path, "r") as f:
             # Check if there was any exception
             if future.exception() is not None:
                 print(f"Future {future} generated an exception: {future.exception()}")
+#python3 match.py
+    # new line
+    
+# add a system call to rclone to delete the remote file
+# rclone delete seadex:file_path
+#python3 match.py
+    
